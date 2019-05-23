@@ -1,0 +1,108 @@
+* {
+  margin : 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: whitesmoke;
+}
+
+.main {
+  margin    : 100px auto;
+  text-align: center;
+  width     : 600px;
+  position  : relative;
+}
+
+.window {
+  width   : 600px;
+  height  : 400px;
+  overflow: hidden;
+}
+
+.images {
+  display   : flex;
+  transition: all 1s;
+}
+
+.images>img {
+  width: 100%;
+}
+
+
+#main .btn {
+  width   : 800px;
+  height  : 500px;
+  position: absolute;
+  top     : 25%;
+  left    : -100px;
+}
+
+#main .btn>div {
+  width     : 100px;
+  height    : 220px;
+  background: transparent;
+}
+
+#main .btn #btnleft:hover {
+  opacity: 0.35;
+}
+
+#main .btn #btnright:hover {
+  opacity: 0.35;
+}
+
+#main .btn #btnleft {
+  position: absolute;
+  top     : 0;
+  left    : 0;
+}
+
+#main .btn #btnright {
+  position: absolute;
+  top     : 0;
+  right   : 0;
+}
+
+#main .btn #btnleft .triangle {
+  border-color: transparent rgb(255, 127, 80) transparent transparent;
+}
+
+#main .btn #btnright .triangle {
+  margin-left : 20px;
+  border-color: transparent transparent transparent rgb(255, 127, 80);
+}
+
+
+.triangle {
+  margin-top  : 50px;
+  width       : 0;
+  height      : 0;
+  border-width: 70px 40px;
+  border-style: solid;
+}
+
+#main .item {
+  position: absolute;
+  bottom  : 30px;
+  left    : 20px;
+  width   : 200px;
+  height  : 16px;
+}
+
+#main .item span {
+  width        : 21px;
+  height       : 20px;
+  background   : #ccc;
+  display      : inline-block;
+  border-radius: 50%;
+}
+
+#main .item span:hover {
+  cursor    : pointer;
+  background: rgb(3, 168, 158)
+}
